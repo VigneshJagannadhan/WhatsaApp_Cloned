@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class CallCard extends StatelessWidget {
   CallCard({required this.name,required this.callTime, required this.kIcon, required this.imagePath});
   IconData kIcon = Icons.call ;

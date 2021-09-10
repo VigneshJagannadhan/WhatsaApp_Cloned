@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ChatCard extends StatelessWidget {
   ChatCard({required this.name,required this.message, required this.textTime, required this.imagePath});
   final String textTime;

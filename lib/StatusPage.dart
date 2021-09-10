@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:assetmentor/Chat.dart';
 
+
+//========================================================================================
+
+// ---------------------VERY IMPORTANT-------------------------
+
+// 1. Add a teal circle with small spacing for un-viewed status and grey for viewed
+
+
+//=========================================================================================
+
+
+
 class StatusPage extends StatelessWidget {
   const StatusPage({
     Key? key,

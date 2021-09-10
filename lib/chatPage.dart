@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:assetmentor/Chat.dart';
 
+//========================================================================================
+
+// ---------------------VERY IMPORTANT-------------------------
+
+// 1. Add tick or double tick for sent messages.
+// 2. Green unread notification
+// 3. Notification beside the status heading to show number of unseen chats.
+
+
+//=========================================================================================
+
+
+
+
 class ChatPage extends StatelessWidget {
   const ChatPage({
     Key? key,

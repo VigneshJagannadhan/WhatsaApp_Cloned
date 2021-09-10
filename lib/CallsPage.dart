@@ -5,6 +5,18 @@ class CallsPage extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
+  //========================================================================================
+
+  // ---------------------VERY IMPORTANT-------------------------
+
+  // 1. Add an arrow indicator showing whether the call is incoming or out going or missed.
+  // 2. Correct the positioning of the Floating Action Button.
+  // 3. Notification beside the status heading to show number of unseen calls.
+
+
+  //=========================================================================================
+
+
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -29,3 +41,4 @@ class CallsPage extends StatelessWidget {
     );
   }
 }
+
