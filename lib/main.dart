@@ -1,8 +1,10 @@
+
+// IMPORTS
 import 'package:assetmentor/CallsPage.dart';
 import 'package:assetmentor/StatusPage.dart';
 import 'package:flutter/material.dart';
 import 'chatPage.dart';
-
+import 'package:assetmentor/NotificationIcon.dart';
 //========================================================================================
 
 // ---------------------VERY IMPORTANT-------------------------
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
       home: DefaultTabController(
-        length: 4,
+        length: 3,
         child: Scaffold(
           appBar: AppBar(
             title: Text('Whatsapp'),
@@ -46,18 +48,45 @@ class MyApp extends StatelessWidget {
             bottom: TabBar(
               indicatorColor: Colors.white,
               tabs: [
-                Tab(icon: Icon(Icons.photo_camera),),
-                Tab(text: 'CHATS',),
-                Tab(text: 'STATUS',),
-                Tab(text: 'CALLS',),
+                // Tab(icon: Icon(Icons.photo_camera),),
+                Tab(child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('CHATS'),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 5.0),
+                      child: NotificationIcon(NotificationsNumber: '9',colour: Colors.white,textColour: Colors.teal,),
+                    )
+                  ],
+                ),),
+                Tab(child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('STATUS'),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 5.0),
+                      child: NotificationIcon(NotificationsNumber: '4',colour: Colors.white,textColour: Colors.teal,),
+                    )
+                  ],
+                ),),
+                Tab(child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('CALLS'),
+                    // Padding(
+                    //   padding: const EdgeInsets.only(left: 5.0),
+                    //   child: NotificationIcon(NotificationsNumber: '9',colour: Colors.white,textColour: Colors.teal,),
+                    // )
+                  ],
+                ),),
               ],
             ),
           ),
           body: TabBarView(
             children: [
-              Center(
-                child: Text('Camera'),
-              ),
+              // Center(
+              //   child: Text('Camera'),
+              // ),
               ChatPage(),
               StatusPage(),
               CallsPage(),

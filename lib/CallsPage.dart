@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:assetmentor/CallCard.dart';
+import 'package:assetmentor/Cards.dart';
 class CallsPage extends StatelessWidget {
   const CallsPage({
     Key? key,
@@ -28,15 +28,13 @@ class CallsPage extends StatelessWidget {
         CallCard(name: 'abhinand', callTime: 'Today, 2:05 AM', kIcon: Icons.call,imagePath: 'images/abhinand.jpg',),
         CallCard(name: 'jibz', callTime: 'Today, 2:05 AM', kIcon: Icons.call,imagePath: 'images/jibs.jpg',),
         CallCard(name: 'raashi', callTime: 'Today, 2:05 AM', kIcon: Icons.call,imagePath: 'images/raashi.jpg',),
-        // CallCard(name: 'malik', callTime: 'Today, 2:05 AM', kIcon: Icons.call,imagePath: 'images/malik.jpg',),
-        // CallCard(name: 'malam jio', callTime: 'Today, 2:05 AM', kIcon: Icons.call,imagePath: 'images/malam2.jpg',),
-        // CallCard(name: 'bilal', callTime: 'Today, 2:05 AM', kIcon: Icons.call,imagePath: 'images/bilal.jpg',),
-        Align(
-          alignment: Alignment.bottomRight,
-            child: Padding(
-              padding: const EdgeInsets.only(right: 20),
-              child: FloatingActionButton(onPressed: (){},backgroundColor: Colors.teal,child: Icon(Icons.add_call),),
-            ))
+        CallCard(name: 'malik', callTime: 'Today, 2:05 AM', kIcon: Icons.call,imagePath: 'images/malik.jpg',),
+        CallCard(name: 'malam jio', callTime: 'Today, 2:05 AM', kIcon: Icons.call,imagePath: 'images/malam2.jpg',),
+        CallCard(name: 'bilal', callTime: 'Today, 2:05 AM', kIcon: Icons.call,imagePath: 'images/bilal.jpg',),
+        Padding(
+          padding: const EdgeInsets.only(right: 20),
+          child: FloatingActionButton(onPressed: (){},backgroundColor: Colors.teal,child: Icon(Icons.add_call),),
+        )
       ],
     );
   }

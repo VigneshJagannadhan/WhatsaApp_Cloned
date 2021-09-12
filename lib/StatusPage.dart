@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:assetmentor/Chat.dart';
+import 'package:assetmentor/Cards.dart';
 
 
 //========================================================================================
 
 // ---------------------VERY IMPORTANT-------------------------
 
-// 1. Add a teal circle with small spacing for un-viewed status and grey for viewed
+// 1. Add a teal circle with small spacing for un-viewed status and grey for viewed (Done)
 
 
 //=========================================================================================
@@ -107,10 +107,10 @@ class StatusPage extends StatelessWidget {
             ),),
           ),
         ),//Recent updates Divider
-        ChatCard(name: 'fuad', message: 'Today, 07:17 pm', textTime: '',imagePath: 'images/fuad.jpg',),
-        ChatCard(name: 'freaken', message: 'Today, 06:00 pm', textTime: '',imagePath: 'images/freaken.jpg',),
-        ChatCard(name: 'abhinand', message: 'Today, 04:25 pm', textTime: '',imagePath: 'images/abhinand.jpg',),
-        ChatCard(name: 'jibz', message: 'Today, 02:34 pm', textTime: '',imagePath: 'images/jibs.jpg',),
+        StatusCard(name: 'fuad', ktime: 'Today, 07:17 pm', textTime: '',imagePath: 'images/fuad.jpg', notificationNumber: (''),),
+        StatusCard(name: 'freaken', ktime: 'Today, 06:00 pm', textTime: '',imagePath: 'images/freaken.jpg',notificationNumber: (''),),
+        StatusCard(name: 'abhinand', ktime: 'Today, 04:25 pm', textTime: '',imagePath: 'images/abhinand.jpg',notificationNumber: (''),),
+        StatusCard(name: 'jibz', ktime: 'Today, 02:34 pm', textTime: '',imagePath: 'images/jibs.jpg',notificationNumber: (''),),
         Container(
           width: double.infinity,
           height: 35.0,
@@ -124,10 +124,10 @@ class StatusPage extends StatelessWidget {
               ),),
           ),
         ),//Viewed updates Divider
-        ChatCard(name: 'raashi', message: 'Today, 01:19 pm', textTime: '',imagePath: 'images/raashi.jpg',),
-        ChatCard(name: 'malik', message: 'Today, 7:17 am', textTime: '',imagePath: 'images/malik.jpg',),
-        ChatCard(name: 'malam jio', message: 'Today, 06:00 am', textTime: '',imagePath: 'images/malam2.jpg',),
-        ChatCard(name: 'bilal', message: 'Today, 12:26 am', textTime: '',imagePath: 'images/bilal.jpg',),
+        ViewedStatusCard(name: 'raashi', ktime: 'Today, 01:19 pm', textTime: '',imagePath: 'images/raashi.jpg',notificationNumber: (''),),
+        ViewedStatusCard(name: 'malik', ktime: 'Today, 7:17 am', textTime: '',imagePath: 'images/malik.jpg',notificationNumber: (''),),
+        ViewedStatusCard(name: 'malam jio', ktime: 'Today, 06:00 am', textTime: '',imagePath: 'images/malam2.jpg',notificationNumber: (''),),
+        ViewedStatusCard(name: 'bilal', ktime: 'Today, 12:26 am', textTime: '',imagePath: 'images/bilal.jpg',notificationNumber: (''),),
 
       ],
     );
